@@ -18,7 +18,7 @@ def StepBot(allCandies):
 
 def start(update, context):
     global allCandies
-    allCandies = 30
+    allCandies = 2021
     mess = f'Играем в конфеты, осталось {allCandies} конфет.\n'
     mess += f'Взять за ход можно от {minStep} до {maxStep} конфет.\n'
     context.bot.send_message(update.effective_chat.id, mess)
